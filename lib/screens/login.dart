@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:fitness_trainer/screens/plain_screen.dart';
+import 'package:fitness_trainer/components/home/home_body.dart';
 
 class Login extends StatelessWidget {
 
@@ -77,7 +78,7 @@ class Login extends StatelessWidget {
                 //to keep memory use down
 
                 MaterialPageRoute router = new MaterialPageRoute(
-                  builder: (BuildContext context) => PlainScreen(title: 'Home',)
+                  builder: (BuildContext context) => PlainScreen(title: 'Home', body: HomeBody())
                 );
 
 
