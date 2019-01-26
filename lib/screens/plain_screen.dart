@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:fitness_trainer/components/navigation_drawer.dart';
+import 'package:fitness_trainer/components/account_menu.dart';
 
 class PlainScreen extends StatelessWidget {
   
@@ -18,10 +20,7 @@ class PlainScreen extends StatelessWidget {
         title: Text(title),
 
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.account_circle),
-            onPressed: () => debugPrint("Account pressed!"),
-          )
+          AccountMenu(),
         ],
 
       ),

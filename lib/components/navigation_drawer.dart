@@ -11,6 +11,7 @@ import 'package:fitness_trainer/components/achievements/achievements.dart';
 import 'package:fitness_trainer/components/assigned_tasks/assigned_tasks_body.dart';
 import 'package:fitness_trainer/components/assessments/assessments.dart';
 import 'package:fitness_trainer/components/training_history/training_history.dart';
+import 'package:fitness_trainer/components/admin/admin_body.dart';
 
 class NavigationDrawer extends StatelessWidget {
 
@@ -52,7 +53,7 @@ class NavigationDrawer extends StatelessWidget {
 
       'Store': new PlainScreen(title: title),
 
-      'Admin': new PlainScreen(title: title),
+      'Admin': new PlainScreen(title: title, body: AdminBody()),
     };
 
     MaterialPageRoute router = new MaterialPageRoute(

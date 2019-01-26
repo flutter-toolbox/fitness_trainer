@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:fitness_trainer/components/navigation_drawer.dart';
+import 'package:fitness_trainer/components/account_menu.dart';
 
 class TabbedScreen extends StatelessWidget {
 
@@ -24,10 +25,7 @@ class TabbedScreen extends StatelessWidget {
           title: Text(title),
 
           actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.account_circle),
-              onPressed: () => debugPrint('Account Pressed!'),
-            ),
+            AccountMenu(),
           ],
 
           bottom: bottom

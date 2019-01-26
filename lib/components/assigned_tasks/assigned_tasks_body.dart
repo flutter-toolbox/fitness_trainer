@@ -15,7 +15,7 @@ class AssignedTasksBodyState extends State<AssignedTasksBody> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return null;
+    return Text('placeholder');
   }
 
 }
