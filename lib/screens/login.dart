@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:fitness_trainer/screens/plain_screen.dart';
 import 'package:fitness_trainer/components/home/home_body.dart';
+import 'package:fitness_trainer/components/create_account.dart';
 
 class Login extends StatelessWidget {
 
@@ -81,8 +82,6 @@ class Login extends StatelessWidget {
                   builder: (BuildContext context) => PlainScreen(title: 'Home', body: HomeBody())
                 );
 
-
-                // Navigator.of(context).push(dummyRouter);
                 Navigator.of(context).push(router);
               }
             ),
@@ -90,7 +89,14 @@ class Login extends StatelessWidget {
             RaisedButton(
               child: Text('Create Account'), 
               color: Colors.redAccent.shade400,
-              onPressed: () => 0
+              onPressed: () {
+
+                MaterialPageRoute router = new MaterialPageRoute(
+                  builder: (BuildContext context) => PlainScreen(title: 'Create Account', body: CreateAccount())
+                );
+
+                Navigator.of(context).push(router);
+              }
             ),
             
           ],
